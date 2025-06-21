@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - arunnattarayan/jx-template
-      target_url: http://lighthouse.jx.103.147.60.33.nip.io/merge/status
+      target_url: http://lighthouse-jx.35.223.51.193.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

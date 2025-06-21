@@ -47,7 +47,7 @@
 	      <td>jx-pipelines-visualizer</td>
 	      <td title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer</a></td>
 	      <td>1.8.4</td>
-	      <td><a href='http://dashboard.jx.103.147.60.33.nip.io'>view</a></td>
+	      <td><a href='http://dashboard-jx.35.223.51.193.nip.io'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>0</a> <a href='https://github.com/jenkins-x/jx-pipelines-visualizer.git'>1</a> </td>
 	    </tr>
     <tr>

@@ -26,7 +26,7 @@ spec:
     metadata:
       annotations:
         ad.datadoghq.com/poller.logs: '[{"source":"lighthouse","service":"poller"}]'
-        jenkins-x.io/hash: 'c43087bb4c40b1942c44d9d463ffff52accc924cdffcd3a3eff1ae1b7dfa055b'
+        jenkins-x.io/hash: 'faba7c7d6c540cb235304a83b193b1fc7b816c80f8acb207e1177781ce485397'
       labels:
         app: lighthouse-poller
     spec:

@@ -28,7 +28,7 @@ jxRequirements:
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    provider: kubernetes
+    provider: k3s
     registry: ghcr.io
   environments:
   - key: dev
@@ -36,10 +36,10 @@ jxRequirements:
     repository: jx-template
   - key: staging
   ingress:
-    domain: 103.147.60.33.nip.io
+    domain: 35.223.51.193.nip.io
     ignoreLoadBalancer: true
     kind: ingress
-    namespaceSubDomain: .jx.
+    namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
@@ -47,7 +47,7 @@ jxRequirements:
   pipelineUser:
     username: arunnattarayan
   repository: bucketrepo
-  secretStorage: vault
+  secretStorage: local
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
@@ -59,4 +59,4 @@ jxRequirementsKuberhealthy:
 jxRequirementsTLSCheck:
   enabled: false
 jxRequirementsVault:
-  enabled: true
+  enabled: false

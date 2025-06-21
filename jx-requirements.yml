@@ -33,4 +33,5 @@ spec:
     username: arunnattarayan
   repository: bucketrepo
   secretStorage: local
+  vault: {}
   webhook: lighthouse

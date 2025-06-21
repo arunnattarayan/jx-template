@@ -6,6 +6,10 @@ data:
       repos:
       - arunnattarayan/jx-template
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - arunnattarayan/go-test
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +20,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      arunnattarayan/go-test:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       arunnattarayan/jx-template:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -25,6 +34,20 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      arunnattarayan/go-test:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
       arunnattarayan/jx-template:
       - config-updater
       - approve
@@ -52,6 +75,11 @@ data:
     - repos:
       - arunnattarayan/jx-template
       trusted_org: arunnattarayan
+    - repos:
+      - arunnattarayan/go-test
+      trusted_org: arunnattarayan
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

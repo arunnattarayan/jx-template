@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: arunnattarayan
+    provider: github
+    repository: go-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: arunnattarayan-go-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/arunnattarayan/go-test.git
+  org: arunnattarayan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: go-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/arunnattarayan/go-test

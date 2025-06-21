@@ -23,7 +23,6 @@ spec:
     domain: 35.223.51.193.nip.io
     ignoreLoadBalancer: true
     kind: ingress
-    ingressClassName: nginx
     namespaceSubDomain: -jx.
     tls:
       email: ""
